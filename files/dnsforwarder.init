@@ -1,0 +1,22 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006-2011 OpenWrt.org
+
+START=90
+
+BIN="/usr/bin/dnsforwarder"
+DEFAULT_CONFIG_FILE="/etc/dnsforwarder.config"
+
+
+start() {
+	$BIN -f $DEFAULT_CONFIG_FILE -d
+}
+
+stop(){
+	killall dnsforwarder
+}
+
+restart(){
+	stop
+	start
+}
+
