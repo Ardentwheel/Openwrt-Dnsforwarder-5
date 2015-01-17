@@ -46,10 +46,17 @@ CONFIGURE_ARGS += \
 	$(if $(CONFIG_ENABLE_STATIC),--enable-static, ) 
 
 define Package/dnsforwarder-5/install
+	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_CONF) ./files/dnsforwarder.config $(1)/etc
-	$(INSTALL_BIN) ./files/dnsforwarder.init $(1)/etc/init.d/dnsforwarder
+	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/model/cbi
+	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
 	$(INSTALL_DIR) $(1)/usr/bin
+
+	$(INSTALL_CONF) ./files/dnsforwarder.config $(1)/etc
+	$(INSTALL_CONF) ./files/dnsforwarder $(1)/etc/config/dnsforwarder
+	$(INSTALL_BIN) ./files/dnsforwarder.init $(1)/etc/init.d/dnsforwarder
+	$(INSTALL_DATA) ./files/dnsforwarder.lua.cbi $(1)/usr/lib/lua/luci/model/cbi/dnsforwarder.lua.cbi
+	$(INSTALL_DATA) ./files/dnsforwarder.lua.controller $(1)/usr/lib/lua/luci/controller/dnsforwarder.lua
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/dnsforwarder $(1)/usr/bin
 endef
 
