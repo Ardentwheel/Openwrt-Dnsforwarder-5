@@ -3,7 +3,7 @@
 
 The DNS default port is 5353, you can change it through ./files/dnsforwarder.config .
 
-##### Install
+###### Install
 | | |
 | --------   | :----  |
 | (1) Copy Openwrt-Dnsforwarder-5 folder in to ./trunk/packages . |
