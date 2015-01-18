@@ -15,11 +15,11 @@ local util = require "nixio.util"
 local running=(luci.sys.call("pidof dnsforwarder > /dev/null") == 0)
 if running then	
 	m = Map("dnsforwarder", translate("dnsforwarder"), 
-		translate("A DNS Cache Server with TCP ,UDP & GfwList. Use 'dnsforwarder -P' to find fake IP.   dnsforwarder is running"))
+		translate("A DNS Cache Server with TCP ,UDP & GfwList. Use 'dnsforwarder -P' to find fake IP.   dnsforwarder is running（Refresh the page！）"))
 
 else
 	m = Map("dnsforwarder", translate("dnsforwarder"), 
-		translate("A DNS Cache Server with TCP ,UDP & GfwList. Use 'dnsforwarder -P' to find fake IP.   dnsforwarder is not running"))
+		translate("A DNS Cache Server with TCP ,UDP & GfwList. Use 'dnsforwarder -P' to find fake IP.   dnsforwarder is not running（Refresh the page！）"))
 end
 
 b = m:section(TypedSection, "dnsforwarder", "Basic")
