@@ -317,7 +317,7 @@ Full-Width Styles
 
 #downloads {
   position: absolute;
-  width: 210px;
+  width: 315px;
   z-index: 10;
   bottom: -40px;
   right: 0;
@@ -342,6 +342,17 @@ Full-Width Styles
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom ;
+  margin-left: 10px;
+}
+
+.ipk_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
   margin-left: 10px;
 }
@@ -351,6 +362,10 @@ Full-Width Styles
 }
 
 .tar_download_link:hover {
+  background: url(../images/sprite_download.png) no-repeat top middle;
+}
+
+.ipk_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
