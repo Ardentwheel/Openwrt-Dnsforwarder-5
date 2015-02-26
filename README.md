@@ -1,7 +1,7 @@
 # OpenWRT-Dnsforwarder-5
 #### A DNS Cache Server with TCP ,UDP & GfwList. (Interface of Luci included.)
 
-The DNS default port is 5353, you can change it through ./files/dnsforwarder.config .
+Default port is 5353, you can change it through ./files/dnsforwarder.config .
 
 ###### Install
 | | |
