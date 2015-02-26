@@ -17,7 +17,7 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/matthew728960/Openwrt-Dnsforwarder-5">View on GitHub</a>
-          <a id="language_cn_zh" href=".//index-cn_zh.html">Chinese(中文)</a>
+          <a id="language_en" href="./index.html">English</a>
 
           <h1 id="project_title">Openwrt-dnsforwarder-5</h1>
           <h2 id="project_tagline"></h2>
@@ -25,7 +25,7 @@
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/matthew728960/Openwrt-Dnsforwarder-5/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/matthew728960/Openwrt-Dnsforwarder-5/tarball/master">Download this project as a tar.gz file</a>
-              <a class="ipk_download_link" href="./dnsforwarder-5-01-15-1_ramips_24kec.ipk">Download this project as a .ipk file</a>
+              <a class="ipk_download_link" href=".//dnsforwarder-5-01-15-1_ramips_24kec.ipk">Download this project as a .ipk file</a>
             </section>
         </header>
     </div>
@@ -34,33 +34,33 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>DNS Cache Server with TCP ,UDP & GfwList</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>DNS 缓存服务器，支持TPC、UDP协议与GfwList</h3>
 
-<p>The ipk package whice can be downloaded is only for MT7620a CPU. If your machine are not MT7620a, you need to compile your own ipk package. </p>
+<p>提供下载的是适合于MT7620a CPU 的ipk包，CPU不是MT7620a的需要自行编译</p>
 
-<p>Default port is 5353, you can change it through ./files/dnsforwarder.config .</p>
+<p>默认端口为5353，你可以改变它通过 ./file/dnsforwarder.config </p>
 
 <h3>
-<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Dnsforwarder</h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>安装 Dnsforwarder</h3>
 
 <pre><code>wget http://matthew728960.github.io/Openwrt-Dnsforwarder-5/dnsforwarder-5-01-15-1_ramips_24kec.ipk;
 opkg install dnsforwarder-5-01-15-1_ramips_24kec.ipk</code></pre>
 
 <h3>
-<a id="compile" class="anchor" href="#compile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compile</h3>
+<a id="compile" class="anchor" href="#compile" aria-hidden="true"><span class="octicon octicon-link"></span></a>编译</h3>
 
-<pre>(1) Copy Openwrt-Dnsforwarder-5 folder in to ./trunk/packages .	
-(2) Put the dnsforwarder-5-01-15.tar.gz file to the dl folder.
+<pre>(1) 复制 Openwrt-Dnsforwarder-5 文件夹到 ./trunk/packages 
+(2) 把 dnsforwarder-5-01-15.tar.gz 放到 dl 文件夹
 (3) make package/Openwrt-Dnsforwarder-5/compile
 (4) make package/Openwrt-Dnsforwarder-5/clean
 </pre>
 
 <h3>
-<a id="documents" class="anchor" href="#documents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documents</h3>
+<a id="documents" class="anchor" href="#documents" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档</h3>
 
 <table border="1">
 <tr>
-<td>Help</td>
+<td>帮助</td>
 <td>https://github.com/holmium/dnsforwarder/wiki/</td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ opkg install dnsforwarder-5-01-15-1_ramips_24kec.ipk</code></pre>
 <td>https://github.com/holmium/dnsforwarder/tree/5/</td>
 </tr>
 <tr>
-<td>configure</td>
+<td>configure解释</td>
 <td>https://github.com/holmium/dnsforwarder/wiki/编译</td>
 </tr>
 </table>
