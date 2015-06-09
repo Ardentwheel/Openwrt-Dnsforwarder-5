@@ -11,7 +11,7 @@ PKG_VERSION:=5-01-15
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/matthew728960/dnsforwarder-5
+PKG_SOURCE_URL:=https://raw.githubusercontent.com/matthew728960/Openwrt-Dnsforwarder-5/master
 PKG_INSTALL:=1
 
 PKG_CONFIG_DEPENDS := \
